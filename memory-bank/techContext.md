@@ -1,8 +1,14 @@
 # Contexto técnico y decisiones del proyecto
 
+## Referencia estable del respaldo de interfaces
+
+La rama `backup/avance-interfaces-2026-10-17`, en el commit de referencia `c0288d6c199f2223f302b6bd93bc81a337a4021b`, conserva la configuración pnpm/workspace, los esqueletos React + TypeScript + Vite + Tailwind de `uis/website` y `uis/backoffice`, y sus README. El avance llegó a pantallas mínimas; se comprobaron compilación y arranque, y se utilizó la skill `app-readme`. Son prototipos, no interfaces terminadas.
+
+Este código se separó porque no era necesario para la entrega de infraestructura de agentes. Antes de generar una configuración equivalente en un hito futuro, revisar el respaldo y evaluar qué puede reutilizarse según la consigna vigente. No restaurar ni fusionar automáticamente toda la rama: contiene decisiones que pueden no corresponder al siguiente hito. Para el sitio público actual se acordó HTML + Tailwind CSS + JavaScript, sin React.
+
 ## Estado de esta rama: hito 2
 
-`feature/agent-memory-bank` entrega infraestructura de agentes y documentación; no contiene un árbol de aplicaciones web implementadas. Los README conservados de `uis/website` y `uis/backoffice` describen sus responsabilidades siguiendo las instrucciones de la plantilla. La configuración React/Vite y los archivos de aplicación que se probaron se preservan en `backup/avance-interfaces-2026-10-17`; no se consideran decisiones confirmadas para reutilizar.
+`feature/agent-memory-bank` entrega infraestructura de agentes y documentación; no contiene un árbol de aplicaciones web implementadas. Los README conservados de `uis/website` y `uis/backoffice` describen sus responsabilidades siguiendo las instrucciones de la plantilla. La configuración y los archivos de aplicación descritos arriba pertenecen al respaldo, no a esta rama.
 
 ## Responsabilidad de las rutas
 

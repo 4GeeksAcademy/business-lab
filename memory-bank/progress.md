@@ -8,7 +8,7 @@ Esta rama se prepara para entregar exclusivamente el hito 2 de infraestructura d
 
 ## Avance preservado en la rama de respaldo
 
-La rama `backup/avance-interfaces-2026-10-17` se creó desde el HEAD original `c0288d6c199f2223f302b6bd93bc81a337a4021b` y se publicó en `origin` antes de retirar archivos de esta rama. Allí permanece el avance de configuración de pnpm/workspace, los esqueletos React/Vite de website y backoffice y sus recursos asociados. Es una copia histórica para revisión, no una decisión de reutilización.
+La referencia estable, el contenido y las pautas para evaluar reutilización del respaldo están documentados en [techContext.md](./techContext.md#referencia-estable-del-respaldo-de-interfaces). El avance pertenece únicamente a la rama de respaldo y no está implementado en esta rama.
 
 ## Evidencia histórica de la skill y las interfaces
 
