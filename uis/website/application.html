@@ -15,7 +15,7 @@
     <a class="sr-only z-50 rounded bg-white p-3 text-[#143F43] focus:not-sr-only focus:fixed focus:left-4 focus:top-4" href="#form-title">Saltar al formulario</a>
     <header class="border-b border-[#2B2926]/10 bg-[#FFF9ED]">
       <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8 lg:px-12">
-        <a class="font-['Cormorant_Garamond'] text-3xl font-semibold tracking-wide text-[#143F43]" href="index.html" aria-label="Nexova, volver al inicio">Nexova</a>
+        <a class="rounded-sm font-['Cormorant_Garamond'] text-3xl leading-9 font-semibold tracking-wide text-[#143F43] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#143F43] lg:text-5xl lg:leading-none" href="index.html" aria-label="Nexova, volver al inicio">Nexova</a>
         <a class="rounded-sm text-sm font-semibold text-[#143F43] hover:text-[#B34F39] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#143F43]" href="index.html">← Volver al inicio</a>
       </div>
     </header>
@@ -28,8 +28,8 @@
             <h1 class="mt-5 font-['Cormorant_Garamond'] text-5xl font-semibold leading-tight xl:text-6xl">Tu talento puede abrir nuevas posibilidades.</h1>
             <p class="mt-5 text-lg leading-8 text-[#FFF9ED]">Comparte tu experiencia, tus intereses y tu disponibilidad para formar parte de nuestro banco de talento.</p>
           </div>
-          <div class="mt-10 flex min-h-[28rem] flex-1 items-center justify-center rounded-2xl border border-[#FFF9ED]/30 bg-[#FFF9ED]/10 p-6 text-center" role="img" aria-label="Espacio provisional para una fotografía vertical y tranquila; imagen y encuadre definitivos pendientes">
-            <div class="max-w-xs rounded-xl border border-[#FFF9ED]/40 bg-[#143F43]/80 p-5 text-sm leading-6"><span class="block font-semibold">Espacio para fotografía vertical</span>Imagen provisional · fotografía y encuadre pendientes</div>
+          <div class="mt-10 w-full flex-1 overflow-hidden rounded-2xl">
+            <img class="block h-auto w-full" src="assets/images/talent-pathways.webp" alt="Ilustración vertical de caminos que representan distintas trayectorias de talento" loading="lazy" decoding="async">
           </div>
         </aside>
 
@@ -52,41 +52,41 @@
             <div class="grid gap-x-5 gap-y-5 sm:grid-cols-2">
               <div class="sm:col-span-2">
                 <label class="mb-2 block text-sm font-semibold" for="full-name">Nombre completo <span aria-hidden="true">*</span></label>
-                <input class="w-full rounded-lg border border-[#143F43]/30 bg-white px-4 py-3 text-base outline-none transition focus:border-[#143F43] focus:ring-2 focus:ring-[#143F43]/25" id="full-name" name="fullName" type="text" autocomplete="name" required aria-describedby="full-name-error">
+                <input class="w-full rounded-lg border border-[#143F43]/30 bg-white px-4 py-3 text-base outline-none transition-colors duration-200 focus:border-[#143F43] focus:ring-2 focus:ring-[#143F43]/25 motion-reduce:transition-none" id="full-name" name="fullName" type="text" autocomplete="name" required aria-describedby="full-name-error">
                 <p class="mt-1 min-h-5 text-sm font-semibold text-[#B34F39]" id="full-name-error"></p>
               </div>
               <div>
                 <label class="mb-2 block text-sm font-semibold" for="email">Email <span aria-hidden="true">*</span></label>
-                <input class="w-full rounded-lg border border-[#143F43]/30 bg-white px-4 py-3 text-base outline-none transition focus:border-[#143F43] focus:ring-2 focus:ring-[#143F43]/25" id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+                <input class="w-full rounded-lg border border-[#143F43]/30 bg-white px-4 py-3 text-base outline-none transition-colors duration-200 focus:border-[#143F43] focus:ring-2 focus:ring-[#143F43]/25 motion-reduce:transition-none" id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
                 <p class="mt-1 min-h-5 text-sm font-semibold text-[#B34F39]" id="email-error"></p>
               </div>
               <div>
                 <label class="mb-2 block text-sm font-semibold" for="phone">Teléfono <span aria-hidden="true">*</span></label>
-                <input class="w-full rounded-lg border border-[#143F43]/30 bg-white px-4 py-3 text-base outline-none transition focus:border-[#143F43] focus:ring-2 focus:ring-[#143F43]/25" id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+34 612 345 678" required aria-describedby="phone-error">
+                <input class="w-full rounded-lg border border-[#143F43]/30 bg-white px-4 py-3 text-base outline-none transition-colors duration-200 focus:border-[#143F43] focus:ring-2 focus:ring-[#143F43]/25 motion-reduce:transition-none" id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+34 612 345 678" required aria-describedby="phone-error">
                 <p class="mt-1 min-h-5 text-sm font-semibold text-[#B34F39]" id="phone-error"></p>
               </div>
               <div>
                 <label class="mb-2 block text-sm font-semibold" for="country">País de residencia <span aria-hidden="true">*</span></label>
-                <select class="w-full rounded-lg border border-[#143F43]/30 bg-white px-4 py-3 text-base outline-none transition focus:border-[#143F43] focus:ring-2 focus:ring-[#143F43]/25" id="country" name="country" required aria-describedby="country-error">
+                <select class="w-full rounded-lg border border-[#143F43]/30 bg-white px-4 py-3 text-base outline-none transition-colors duration-200 focus:border-[#143F43] focus:ring-2 focus:ring-[#143F43]/25 motion-reduce:transition-none" id="country" name="country" required aria-describedby="country-error">
                   <option value="">Selecciona una opción</option><option value="España">España</option><option value="Estados Unidos">Estados Unidos</option><option value="Otro">Otro</option>
                 </select>
                 <p class="mt-1 min-h-5 text-sm font-semibold text-[#B34F39]" id="country-error"></p>
               </div>
               <div>
                 <label class="mb-2 block text-sm font-semibold" for="experience">Años de experiencia <span aria-hidden="true">*</span></label>
-                <input class="w-full rounded-lg border border-[#143F43]/30 bg-white px-4 py-3 text-base outline-none transition focus:border-[#143F43] focus:ring-2 focus:ring-[#143F43]/25" id="experience" name="experience" type="number" min="0" max="50" required aria-describedby="experience-error">
+                <input class="w-full rounded-lg border border-[#143F43]/30 bg-white px-4 py-3 text-base outline-none transition-colors duration-200 focus:border-[#143F43] focus:ring-2 focus:ring-[#143F43]/25 motion-reduce:transition-none" id="experience" name="experience" type="number" min="0" max="50" required aria-describedby="experience-error">
                 <p class="mt-1 min-h-5 text-sm font-semibold text-[#B34F39]" id="experience-error"></p>
               </div>
               <div>
                 <label class="mb-2 block text-sm font-semibold" for="sector">Sector de interés <span aria-hidden="true">*</span></label>
-                <select class="w-full rounded-lg border border-[#143F43]/30 bg-white px-4 py-3 text-base outline-none transition focus:border-[#143F43] focus:ring-2 focus:ring-[#143F43]/25" id="sector" name="sector" required aria-describedby="sector-error">
+                <select class="w-full rounded-lg border border-[#143F43]/30 bg-white px-4 py-3 text-base outline-none transition-colors duration-200 focus:border-[#143F43] focus:ring-2 focus:ring-[#143F43]/25 motion-reduce:transition-none" id="sector" name="sector" required aria-describedby="sector-error">
                   <option value="">Selecciona una opción</option><option value="Tecnología">Tecnología</option><option value="Retail">Retail</option><option value="Servicios Financieros">Servicios Financieros</option><option value="Consultoría">Consultoría</option><option value="Otro">Otro</option>
                 </select>
                 <p class="mt-1 min-h-5 text-sm font-semibold text-[#B34F39]" id="sector-error"></p>
               </div>
               <div>
                 <label class="mb-2 block text-sm font-semibold" for="english">Nivel de inglés <span aria-hidden="true">*</span></label>
-                <select class="w-full rounded-lg border border-[#143F43]/30 bg-white px-4 py-3 text-base outline-none transition focus:border-[#143F43] focus:ring-2 focus:ring-[#143F43]/25" id="english" name="english" required aria-describedby="english-error">
+                <select class="w-full rounded-lg border border-[#143F43]/30 bg-white px-4 py-3 text-base outline-none transition-colors duration-200 focus:border-[#143F43] focus:ring-2 focus:ring-[#143F43]/25 motion-reduce:transition-none" id="english" name="english" required aria-describedby="english-error">
                   <option value="">Selecciona una opción</option><option value="Básico">Básico</option><option value="Intermedio">Intermedio</option><option value="Avanzado">Avanzado</option><option value="Nativo">Nativo</option>
                 </select>
                 <p class="mt-1 min-h-5 text-sm font-semibold text-[#B34F39]" id="english-error"></p>
@@ -94,30 +94,32 @@
               <fieldset class="sm:col-span-2">
                 <legend class="mb-2 text-sm font-semibold">Disponibilidad <span aria-hidden="true">*</span></legend>
                 <div class="grid gap-2 sm:grid-cols-2">
-                  <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-[#143F43]/20 bg-white px-4 py-3 hover:bg-[#F0EADD]"><input class="h-4 w-4 accent-[#143F43] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#143F43]" id="availability-immediate" name="availability" type="radio" value="Inmediata" required aria-describedby="availability-error">Inmediata</label>
-                  <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-[#143F43]/20 bg-white px-4 py-3 hover:bg-[#F0EADD]"><input class="h-4 w-4 accent-[#143F43] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#143F43]" id="availability-month" name="availability" type="radio" value="1 mes" required aria-describedby="availability-error">1 mes</label>
-                  <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-[#143F43]/20 bg-white px-4 py-3 hover:bg-[#F0EADD]"><input class="h-4 w-4 accent-[#143F43] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#143F43]" id="availability-quarter" name="availability" type="radio" value="2-3 meses" required aria-describedby="availability-error">2-3 meses</label>
-                  <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-[#143F43]/20 bg-white px-4 py-3 hover:bg-[#F0EADD]"><input class="h-4 w-4 accent-[#143F43] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#143F43]" id="availability-exploring" name="availability" type="radio" value="Solo explorando" required aria-describedby="availability-error">Solo explorando</label>
+                  <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-[#143F43]/20 bg-white px-4 py-3 transition-colors duration-200 hover:bg-[#F0EADD] has-[:checked]:border-[#143F43] has-[:checked]:bg-[#F0EADD] has-[:checked]:ring-1 has-[:checked]:ring-[#143F43] motion-reduce:transition-none"><input class="h-4 w-4 accent-[#143F43] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#143F43]" id="availability-immediate" name="availability" type="radio" value="Inmediata" required aria-describedby="availability-error">Inmediata</label>
+                  <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-[#143F43]/20 bg-white px-4 py-3 transition-colors duration-200 hover:bg-[#F0EADD] has-[:checked]:border-[#143F43] has-[:checked]:bg-[#F0EADD] has-[:checked]:ring-1 has-[:checked]:ring-[#143F43] motion-reduce:transition-none"><input class="h-4 w-4 accent-[#143F43] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#143F43]" id="availability-month" name="availability" type="radio" value="1 mes" required aria-describedby="availability-error">1 mes</label>
+                  <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-[#143F43]/20 bg-white px-4 py-3 transition-colors duration-200 hover:bg-[#F0EADD] has-[:checked]:border-[#143F43] has-[:checked]:bg-[#F0EADD] has-[:checked]:ring-1 has-[:checked]:ring-[#143F43] motion-reduce:transition-none"><input class="h-4 w-4 accent-[#143F43] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#143F43]" id="availability-quarter" name="availability" type="radio" value="2-3 meses" required aria-describedby="availability-error">2-3 meses</label>
+                  <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-[#143F43]/20 bg-white px-4 py-3 transition-colors duration-200 hover:bg-[#F0EADD] has-[:checked]:border-[#143F43] has-[:checked]:bg-[#F0EADD] has-[:checked]:ring-1 has-[:checked]:ring-[#143F43] motion-reduce:transition-none"><input class="h-4 w-4 accent-[#143F43] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#143F43]" id="availability-exploring" name="availability" type="radio" value="Solo explorando" required aria-describedby="availability-error">Solo explorando</label>
                 </div>
                 <p class="mt-1 min-h-5 text-sm font-semibold text-[#B34F39]" id="availability-error"></p>
               </fieldset>
               <div class="sm:col-span-2">
                 <label class="mb-2 block text-sm font-semibold" for="linkedin">LinkedIn (URL del perfil) <span class="font-normal">(opcional)</span></label>
-                <input class="w-full rounded-lg border border-[#143F43]/30 bg-white px-4 py-3 text-base outline-none transition focus:border-[#143F43] focus:ring-2 focus:ring-[#143F43]/25" id="linkedin" name="linkedin" type="url" autocomplete="url" placeholder="https://www.linkedin.com/in/tu-perfil" aria-describedby="linkedin-error">
+                <input class="w-full rounded-lg border border-[#143F43]/30 bg-white px-4 py-3 text-base outline-none transition-colors duration-200 focus:border-[#143F43] focus:ring-2 focus:ring-[#143F43]/25 motion-reduce:transition-none" id="linkedin" name="linkedin" type="url" autocomplete="url" placeholder="https://www.linkedin.com/in/tu-perfil" aria-describedby="linkedin-error">
                 <p class="mt-1 min-h-5 text-sm font-semibold text-[#B34F39]" id="linkedin-error"></p>
               </div>
               <div class="sm:col-span-2">
                 <div class="mb-2 flex items-baseline justify-between gap-3"><label class="block text-sm font-semibold" for="comments">Comentarios adicionales <span class="font-normal">(opcional)</span></label><span class="text-sm tabular-nums text-[#2B2926]" id="comments-count" aria-live="polite">0 / 500</span></div>
-                <textarea class="w-full rounded-lg border border-[#143F43]/30 bg-white px-4 py-3 text-base outline-none transition focus:border-[#143F43] focus:ring-2 focus:ring-[#143F43]/25" id="comments" name="comments" rows="4" maxlength="500" aria-describedby="comments-error comments-count"></textarea>
+                <textarea class="w-full rounded-lg border border-[#143F43]/30 bg-white px-4 py-3 text-base outline-none transition-colors duration-200 focus:border-[#143F43] focus:ring-2 focus:ring-[#143F43]/25 motion-reduce:transition-none" id="comments" name="comments" rows="4" maxlength="500" aria-describedby="comments-error comments-count"></textarea>
                 <p class="mt-1 min-h-5 text-sm font-semibold text-[#B34F39]" id="comments-error"></p>
               </div>
               <div class="sm:col-span-2">
                 <div class="flex items-start gap-3"><input class="mt-1 h-4 w-4 shrink-0 accent-[#143F43] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#143F43]" id="data-policy" name="dataPolicy" type="checkbox" required aria-describedby="data-policy-error"><label class="text-sm leading-6" for="data-policy">Acepto política de datos <span aria-hidden="true">*</span></label></div>
                 <p class="mt-1 min-h-5 text-sm font-semibold text-[#B34F39]" id="data-policy-error"></p>
-                <p class="mt-2 text-xs leading-5 text-[#2B2926]">La política de tratamiento de datos no se incluye porque su texto oficial no está disponible; no se ha inventado ni enlazado una política.</p>
               </div>
             </div>
-            <button class="mt-7 inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#B34F39] px-6 py-3 font-semibold text-white hover:bg-[#143F43] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#143F43] sm:w-auto" type="submit">Enviar registro</button>
+            <div class="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <button class="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#B34F39] px-6 py-3 font-semibold text-white transition-colors duration-200 hover:bg-[#143F43] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#143F43] disabled:cursor-not-allowed disabled:opacity-60 motion-reduce:transition-none sm:w-auto" type="submit" disabled>Enviar registro</button>
+              <button class="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-[#143F43]/40 bg-transparent px-6 py-3 font-semibold text-[#143F43] transition-colors duration-200 hover:border-[#143F43] hover:bg-[#F0EADD] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#143F43] motion-reduce:transition-none sm:w-auto" type="reset">Limpiar formulario</button>
+            </div>
           </form>
           <div id="form-success" class="mt-8 hidden rounded-2xl border border-[#143F43]/25 bg-[#F0EADD] p-6" role="status" tabindex="-1">
             <h3 class="font-['Cormorant_Garamond'] text-3xl font-semibold text-[#143F43]">¡Gracias por tu interés en Nexova!</h3>

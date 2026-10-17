@@ -5,6 +5,7 @@
   if (!form) return;
 
   const successMessage = document.getElementById("form-success");
+  const submitButton = form.querySelector('button[type="submit"]');
   const comments = document.getElementById("comments");
   const commentsCount = document.getElementById("comments-count");
   const fields = [
@@ -146,5 +147,16 @@
     successMessage.focus();
   });
 
+  form.addEventListener("reset", () => {
+    fields.forEach((field) => {
+      field.error.textContent = "";
+      inputForField(field).forEach((input) => input.removeAttribute("aria-invalid"));
+    });
+    successMessage.classList.add("hidden");
+    window.queueMicrotask(updateCount);
+  });
+
   updateCount();
+  // Without this client-side demo handler, a native GET submit could expose form values in the URL.
+  submitButton.disabled = false;
 })();
