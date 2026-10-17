@@ -2,50 +2,20 @@
 
 ## Propósito y estado
 
-Sitio web público de Nexova para empresas visitantes interesadas en sus servicios de selección, outsourcing de equipos de soporte al cliente y formación corporativa, según [`CONTEXT.md`](../../CONTEXT.md).
+Esta ruta está reservada para el sitio web público de Nexova, dirigido a empresas visitantes interesadas en sus servicios. Según `CONTEXT.md`, estos incluyen selección de perfiles de mandos medios y directivos, outsourcing de soporte al cliente y formación corporativa.
 
-Por ahora solo está implementada la base de la aplicación con el nombre Nexova Solutions. La página única, su navegación entre secciones y el contenido completo están pendientes. No se publican problemas internos ni se presentan capacidades pendientes como disponibles.
+En `feature/agent-memory-bank` no hay una aplicación web implementada. El esqueleto React/Vite y sus verificaciones históricas están preservados en `backup/avance-interfaces-2026-10-17`; no se consideran una base técnica confirmada ni se asume que se reutilizarán.
 
-## Tecnología y requisitos
+## Plan del hito 3
 
-- Node.js `^20.19.0 || >=22.12.0`.
-- pnpm `12.11.2`, fijado en el `package.json` de la raíz.
-- React `19.3.0` y TypeScript `6.0.3`.
-- Vite `8.3.4` y Tailwind CSS `4.3.3`, integrado con `@tailwindcss/vite`.
+El website previsto para el hito 3 usará HTML, Tailwind CSS y JavaScript, con estos archivos en esta carpeta:
 
-## Instalación y ejecución
+- `index.html`
+- `application.html`
+- `validation.js`
 
-En este Codespace, pnpm está instalado en `$HOME/.local/share/pnpm/bin/pnpm`. Usa esa ruta completa para no depender de cambios en los archivos de inicio del shell.
+El plan no está implementado todavía. React no es un requisito confirmado para este website. El futuro contenido deberá estar respaldado por `CONTEXT.md`, sin inventar cifras, contactos o capacidades y sin presentar planes como servicios ya disponibles.
 
-Para reproducir la instalación en otro Codespace, con Node.js `22.13` o posterior, ejecuta desde cualquier carpeta:
+## Ejecución
 
-```sh
-npm install --global --prefix "$HOME/.local/share/pnpm" pnpm@12.11.2
-"$HOME/.local/share/pnpm/bin/pnpm" --version
-```
-
-Desde la raíz del repositorio, instala las dependencias del workspace:
-
-```sh
-"$HOME/.local/share/pnpm/bin/pnpm" install --frozen-lockfile
-```
-
-Desde `uis/website`, inicia el servidor de desarrollo:
-
-```sh
-"$HOME/.local/share/pnpm/bin/pnpm" dev
-```
-
-Vite muestra la dirección local al arrancar. El puerto predeterminado es `5173`; si está ocupado, Vite elige otro disponible.
-
-Desde `uis/website`, compila la aplicación:
-
-```sh
-"$HOME/.local/share/pnpm/bin/pnpm" build
-```
-
-## Comprobaciones
-
-Ejecutadas: `pnpm install --frozen-lockfile` y `pnpm -r build` desde la raíz; servidor iniciado con `pnpm --filter website dev --host 0.0.0.0` desde la raíz y respuesta HTTP comprobada en el puerto `5173`.
-
-No se configuró ni ejecutó un linter en esta base mínima.
+No hay en esta rama una aplicación ejecutable ni comandos de instalación o compilación para esta ruta. No se han ejecutado comprobaciones de aplicación en el árbol actual.
